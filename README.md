@@ -17,10 +17,9 @@ A working prototype exists. This specification series formalises the protocol fo
 ## Specifications
 
 | ID | Title | Status | Description |
-| -- | ----- | ------ | ----------- |
-| [SSF-SPEC-000](./ssf-spec-000/) | System Overview and Architecture | Draft | Principal actors, component boundaries, trust model, and end-to-end payment flow. Start here. |
-| [SSF-SPEC-001](./ssf-spec-001/) | Instant Payment With Permitted Token Transfer — Submission | Draft | Payload structures, cryptographic conventions, and submission protocol for the Payment Processor API. |
-| [SSF-SPEC-002](./ssf-spec-002/) | The Settlement Contract — Canonical | Draft | On-chain interface: state variables, events, functions, fee model, and dual-signature verification pattern. |
+| -- | ----- | ------ | ----------- | 
+| [SSF-SPEC-001](./ssf-spec-001/) | Stablecoin Stack Specification | Draft |The foundational specification of the **Stablecoin Stack** — an open architecture for processing stablecoin payments on Ethereum-compatible networks. |
+| [SSF-SPEC-002](./ssf-spec-002/) |  Wallet-gateway Interface Specification | Draft | This specification defines the normative interface that a conformant wallet-gateway MUST implement, and that a conformant wallet client MUST be capable of consuming|
 
 ---
 
@@ -29,7 +28,7 @@ A working prototype exists. This specification series formalises the protocol fo
 ### Developers
 You want to build against the protocol — integrate a wallet, implement a processor, or deploy a Settlement Contract.
 
-1. Read [SSF-SPEC-000 — System Overview](./ssf-spec-000/overview/) to understand the architecture.
+1. Read [SSF-SPEC-001 — System Overview](./ssf-spec-001/overview/) to understand the architecture.
 2. Read [SSF-SPEC-001 — Payment Submission](./ssf-spec-001/) for the client-side protocol.
 3. Read [SSF-SPEC-002 — Settlement Contract](./ssf-spec-002/) for the on-chain interface.
 4. Use the [guides](./ssf-spec-001/guides/) to walk through implementation step by step.
@@ -37,9 +36,9 @@ You want to build against the protocol — integrate a wallet, implement a proce
 ### Institutions
 You are evaluating the protocol for adoption, integration, or investment.
 
-1. Read [SSF-SPEC-000 — Introduction](./ssf-spec-000/overview/) for system scope and design rationale.
-2. Read [Why Cryptographic Payments](./ssf-spec-000/core-concepts/) for the motivation and design philosophy.
-3. Review the [Architecture Overview](./ssf-spec-000/core-concepts/) for component boundaries and trust model.
+1. Read [SSF-SPEC-001 — Introduction](./ssf-spec-001/overview/) for system scope and design rationale.
+2. Read [Why Cryptographic Payments](./ssf-spec-001/core-concepts/) for the motivation and design philosophy.
+3. Review the [Architecture Overview](./ssf-spec-001/core-concepts/) for component boundaries and trust model.
 
 ### Auditors
 You are assessing cryptographic correctness, security model, or protocol conformance.
@@ -47,13 +46,13 @@ You are assessing cryptographic correctness, security model, or protocol conform
 1. Start with [SSF-SPEC-001 — Formal Specification](./ssf-spec-001/specifications/ssf-spec-001.md) for the submission protocol.
 2. Continue with [SSF-SPEC-002 — Formal Specification](./ssf-spec-002/specifications/ssf-spec-002.md) for the on-chain contract interface.
 3. Review [Security Considerations](./ssf-spec-001/specifications/ssf-spec-001.md#10-security-considerations) in each spec.
-4. See [Normative References](./ssf-spec-000/reference/normative-references.md) for all cited standards.
+4. See [Normative References](./ssf-spec-001/reference/normative-references.md) for all cited standards.
 
 ### Regulators
 You are reviewing the protocol for compliance, consumer protection, or systemic risk assessment.
 
-1. Read [SSF-SPEC-000 — Introduction](./ssf-spec-000/overview/) for scope and purpose.
-2. Read [System Architecture](./ssf-spec-000/core-concepts/) for custody model and participant roles.
+1. Read [SSF-SPEC-001 — Introduction](./ssf-spec-001/overview/) for scope and purpose.
+2. Read [System Architecture](./ssf-spec-001/core-concepts/) for custody model and participant roles.
 3. Review [Security Considerations](./ssf-spec-002/specifications/ssf-spec-002.md#9-security-considerations) for non-custodial guarantees and administrative privilege boundaries.
 
 ---
@@ -85,8 +84,8 @@ This project is in active development. Contributions are welcome across all prof
 >##
 >**Important:** 
 >- Please read [CONTRIBUTING.md](./CONTRIBUTING.md) before opening a pull request or issue.
->- Report issues according to the [**Issue Management Manual**](../issue-management-manual.md) 
->- Respect the [**Code of Conduct**](../CODE_OF_CONDUCT.md)
+>- Report issues according to the [**Issue Management Manual**](./issue-management-manual.md) 
+>- Respect the [**Code of Conduct**](./CODE_OF_CONDUCT.md)
 >##
 
 ---
@@ -103,14 +102,14 @@ Reference **implementations** live in dedicated repositories:
 |Wallet	|prototype-mobile-wallet|
 |SDK	|prototype-sdk|
 
-## Website
+---
+## Websites
 
-The public **documentation** site is built from this repository:
+ - Specifications
 
-- Repository: [REPO]() stablecoin-stack-website
+The public **Specifications** be better read/visualized in the [specifications website](https://specifications.stablecoinstack.org/). The site is built from this repository:
 
-- Live: docs.stablecoinstack.org
-
+- Repository: [REPO](https://github.com/Stablecoin-Stack/specs-website) stablecoin-stack-website
 ---
 
 ## Support the Foundation
@@ -133,11 +132,11 @@ This work is sustained entirely by the generosity of individuals and organisatio
 | Solana (SOL / SPL tokens) | `11111111111111111111111111111111` |
 | Bitcoin (BTC) | `bc1qplaceholderaddressplaceholderaddress` |
 
-All on-chain donations are publicly verifiable and gratefully acknowledged. If you would like your contribution attributed, please send us a note at **contact@stablecoinstack.org** with your transaction hash.
+All on-chain donations are publicly verifiable and gratefully acknowledged. If you would like your contribution attributed, please send us a note at **info@stablecoinstack.org** with your transaction hash.
 
 ### Donate in Fiat
 
-For wire transfers, invoiced sponsorships, or institutional giving arrangements, please reach out to us directly at **contact@stablecoinstack.org**. We are happy to provide any documentation required by your finance or compliance team.
+For wire transfers, invoiced sponsorships, or institutional giving arrangements, please reach out to us directly at **info@stablecoinstack.org**. We are happy to provide any documentation required by your finance or compliance team.
 
 ---
 
